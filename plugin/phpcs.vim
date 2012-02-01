@@ -1,6 +1,6 @@
 function! RunPhpcs()
     let l:filename=@%
-    let l:phpcs_output=system('phpcs --report=csv --standard=Zend '.l:filename)
+    let l:phpcs_output=system('phpcs --report=csv --standard=Oggetto '.l:filename)
     let l:phpcs_list=split(l:phpcs_output, "\n")
     unlet l:phpcs_list[0]
     cexpr l:phpcs_list
